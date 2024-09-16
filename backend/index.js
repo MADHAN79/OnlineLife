@@ -27,7 +27,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 //backend apis for profile, posts, messaging under routes folder.
-app.use("/api/v1/user", userRoute); //eg: 'http://localhost:3000/api/v1/user' see the sub-routes in user.route.js file
+app.use("/api/v1/user", userRoute); //eg: 'https://onlinelife.onrender.com/api/v1/user' see the sub-routes in user.route.js file
 app.use("/api/v1/post", postRoute);
 app.use("/api/v1/message", messageRoute);
 

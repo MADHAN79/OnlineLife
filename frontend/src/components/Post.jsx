@@ -37,7 +37,7 @@ const Post = ({ post }) => {
             
             //this route format of id/action is all determined in post.route.js in backend
             //both id/like  & id/dislike route are get handled in this one route below.
-            const res = await axios.get(`http://localhost:8000/api/v1/post/${post._id}/${action}`, { withCredentials: true });
+            const res = await axios.get(`https://onlinelife.onrender.com/api/v1/post/${post._id}/${action}`, { withCredentials: true });
             console.log(res.data);
 
             if (res.data.success) {
@@ -63,7 +63,7 @@ const Post = ({ post }) => {
     const commentHandler = async () => {
 
         try {
-            const res = await axios.post(`http://localhost:8000/api/v1/post/${post._id}/comment`, { text }, {
+            const res = await axios.post(`https://onlinelife.onrender.com/api/v1/post/${post._id}/comment`, { text }, {
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -90,7 +90,7 @@ const Post = ({ post }) => {
     const deletePostHandler = async () => {
         try {
             //this pass through the delete route in post.route.js under route folder in backend
-            const res = await axios.delete(`http://localhost:8000/api/v1/post/delete/${post?._id}`, { withCredentials: true }) //only for loggedin user
+            const res = await axios.delete(`https://onlinelife.onrender.com/api/v1/post/delete/${post?._id}`, { withCredentials: true }) //only for loggedin user
             if (res.data.success) {
                 //post.filter filters out the deleted posts
                 const updatedPostData = posts.filter((postItem) => postItem?._id !== post?._id);
@@ -106,7 +106,7 @@ const Post = ({ post }) => {
 
     const bookmarkHandler = async () => {
         try {
-            const res = await axios.get(`http://localhost:8000/api/v1/post/${post?._id}/bookmark`, {withCredentials:true});
+            const res = await axios.get(`https://onlinelife.onrender.com/api/v1/post/${post?._id}/bookmark`, {withCredentials:true});
             if(res.data.success){
                 toast.success(res.data.message);
             }
