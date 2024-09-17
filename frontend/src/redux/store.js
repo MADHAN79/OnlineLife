@@ -21,6 +21,7 @@ const persistConfig = {
     key: 'root',
     version: 1,
     storage,
+    blacklist: ['socket'],// Do not persist the socket reducer
 }
 
 const rootReducer = combineReducers({

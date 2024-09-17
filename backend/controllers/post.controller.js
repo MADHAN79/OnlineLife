@@ -160,7 +160,7 @@ export const dislikePost = async (req, res) => {
 export const addComment = async (req,res) =>{
     try {
         const postId = req.params.id;
-        const commentKrneWalaUserKiId = req.id;
+        const commentingUserId = req.id;
 
         const {text} = req.body;
 
@@ -170,7 +170,7 @@ export const addComment = async (req,res) =>{
 
         const comment = await Comment.create({
             text,
-            author:commentKrneWalaUserKiId,
+            author:commentingUserId,
             post:postId
         })
 
