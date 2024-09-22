@@ -2,7 +2,7 @@
 
 (FSD61WD-T : Capstone Project)
 Social Media Platform
-
+ 
 Description :
 Create a social media platform with user authentication, real-time chat, news feed, posts, comments, likes, and notifications. 
 Add features like photo and video uploads, stories, and friend requests. 
