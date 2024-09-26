@@ -54,7 +54,7 @@ const Profile = () => {
                         <Button variant='secondary' className='h-8'>Message</Button>
                       </>
                     ) : (
-                      <Button className='bg-[#0095F6] hover:bg-[#3192d2] h-8'>Follow</Button>
+                      <Link to="/followorunfollow/account"><Button className='bg-[#0095F6] hover:bg-[#3192d2] h-8'>Follow</Button></Link>
                     )
                   )
                 }

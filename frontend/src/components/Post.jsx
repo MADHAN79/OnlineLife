@@ -38,7 +38,7 @@ const Post = ({ post }) => {
             //this route format of id/action is all determined in post.route.js in backend
             //both id/like  & id/dislike route are get handled in this one route below.
             const res = await axios.get(`https://onlinelife.onrender.com/api/v1/post/${post._id}/${action}`, { withCredentials: true });
-            console.log(res.data);
+            //console.log(res.data);
 
             if (res.data.success) {
                 const updatedLikes = liked ? postLike - 1 : postLike + 1;
@@ -69,7 +69,7 @@ const Post = ({ post }) => {
                 },
                 withCredentials: true
             });
-            console.log(res.data);
+            //console.log(res.data);
             if (res.data.success) {
                 const updatedCommentData = [...comment, res.data.comment];
                 setComment(updatedCommentData);
