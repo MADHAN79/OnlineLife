@@ -53,7 +53,7 @@ const CommentDialog = ({ open, setOpen }) => {
         setText("");
       }
     } catch (error) {
-      console.log(error);
+      //console.log(error);
     }
   }
 

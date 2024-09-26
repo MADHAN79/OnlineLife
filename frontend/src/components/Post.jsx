@@ -56,7 +56,7 @@ const Post = ({ post }) => {
                 toast.success(res.data.message);
             }
         } catch (error) {
-            console.log(error);
+            //console.log(error);
         }
     }
 
@@ -83,7 +83,7 @@ const Post = ({ post }) => {
                 setText("");
             }
         } catch (error) {
-            console.log(error);
+            //console.log(error);
         }
     }
 
@@ -99,7 +99,7 @@ const Post = ({ post }) => {
                 toast.success(res.data.message);
             }
         } catch (error) {
-            console.log(error);
+            //console.log(error);
             toast.error(error.response.data.messsage);
         }
     }
@@ -111,7 +111,7 @@ const Post = ({ post }) => {
                 toast.success(res.data.message);
             }
         } catch (error) {
-            console.log(error);
+            //console.log(error);
         }
     }
     return (

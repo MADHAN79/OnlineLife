@@ -15,7 +15,7 @@ const useGetAllMessage = () => {
                     dispatch(setMessages(res.data.messages));
                 }
             } catch (error) {
-                console.log(error);
+                //console.log(error);
             }
         }
         fetchAllMessage();

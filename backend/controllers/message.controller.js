@@ -37,7 +37,7 @@ export const sendMessage = async (req,res) => {
             newMessage
         })
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 export const getMessage = async (req,res) => {
@@ -53,6 +53,6 @@ export const getMessage = async (req,res) => {
         return res.status(200).json({success:true, messages:conversation?.messages});
         
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }

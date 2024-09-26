@@ -36,7 +36,7 @@ export const register = async (req, res) => {
             success: true,
         });
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 export const login = async (req, res) => {
@@ -98,7 +98,7 @@ export const login = async (req, res) => {
         });
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 };
 export const logout = async (_, res) => {
@@ -108,7 +108,7 @@ export const logout = async (_, res) => {
             success: true
         });
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 };
 export const getProfile = async (req, res) => {
@@ -120,7 +120,7 @@ export const getProfile = async (req, res) => {
             success: true
         });
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 };
 
@@ -156,7 +156,7 @@ export const editProfile = async (req, res) => {
         });
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 };
 export const getSuggestedUsers = async (req, res) => {
@@ -173,7 +173,7 @@ export const getSuggestedUsers = async (req, res) => {
             users: suggestedUsers
         })
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 };
 export const followOrUnfollow = async (req, res) => {
@@ -217,6 +217,6 @@ export const followOrUnfollow = async (req, res) => {
             return res.status(200).json({ message: 'followed successfully', success: true });
         }
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }

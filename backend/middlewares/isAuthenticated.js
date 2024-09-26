@@ -20,7 +20,7 @@ const isAuthenticated = async (req,res,next)=>{
         req.id = decode.userId;
         next();//its used to call the next middleware function if response of current middleware is not terminated. https://www.geeksforgeeks.org/what-is-the-use-of-next-function-in-express-js/
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 export default isAuthenticated;

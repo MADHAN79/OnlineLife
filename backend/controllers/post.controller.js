@@ -43,7 +43,7 @@ export const addNewPost = async (req, res) => {
         })
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 export const getAllPost = async (req, res) => {
@@ -65,7 +65,7 @@ export const getAllPost = async (req, res) => {
             success: true
         })
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 };
 export const getUserPost = async (req, res) => {
@@ -87,7 +87,7 @@ export const getUserPost = async (req, res) => {
             success: true
         })
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 export const likePost = async (req, res) => {
@@ -189,7 +189,7 @@ export const addComment = async (req,res) =>{
         })
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 };
 export const getCommentsOfPost = async (req,res) => {
@@ -203,7 +203,7 @@ export const getCommentsOfPost = async (req,res) => {
         return res.status(200).json({success:true,comments});
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 export const deletePost = async (req,res) => {
@@ -234,7 +234,7 @@ export const deletePost = async (req,res) => {
         })
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 export const bookmarkPost = async (req,res) => {
@@ -259,6 +259,6 @@ export const bookmarkPost = async (req,res) => {
         }
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }

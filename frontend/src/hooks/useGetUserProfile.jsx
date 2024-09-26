@@ -15,7 +15,7 @@ const useGetUserProfile = (userId) => {
                     dispatch(setUserProfile(res.data.user));
                 }
             } catch (error) {
-                console.log(error);
+                //console.log(error);
             }
         }
         fetchUserProfile();
